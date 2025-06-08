@@ -12,10 +12,10 @@ Simple Hello World App
     * Allow inbound 80 and 443 tcp for TLS on VMA
 
 3. Run the Container image from Part 1 on VMB while ensuring the application will be accessible from VMA
-   * Test evidences at ./helloworld-server/README.md
+   * Test evidences at ./helloworld-server/test-evidence/README.md
 
 4. Run the proxy as a container on VM A using nginx and proxy attached as volume to the container-without TLS
-    * Test evidences at ./setup-proxy/README.md
+    * Test evidences at ./setup-proxy/test-evidence/README.md
 
 5. Run the proxy as a container on VM A using nginx and proxy attached as volume to the container-with TLS
-    * Test evidences at ./setup-proxy/README.md
+    * Test evidences at ./setup-proxy/test-evidence/README.md
