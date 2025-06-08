@@ -14,6 +14,3 @@ docker run --rm -v nginx-certs:/certs -v $(pwd)/certs:/tmp alpine sh -c "cp /tmp
 
 # Run the NGINX proxy container using the volume created
 docker run -d --name nginx-proxy  --restart unless-stopped -p 80:80  -p 443:443 -v nginx-volume:/etc/nginx -v nginx-certs:/etc/nginx/certs nginx:alpine
-
-#docker build -t nginx-tls-proxy .
-#docker run -d -p 443:443 -p 80:80 -v $(pwd)/nginx.conf:/etc/nginx/nginx.conf:ro -v /etc/nginx/certs:/etc/nginx/certs:ro nginx-tls-proxy
