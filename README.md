@@ -1,11 +1,11 @@
 # Hello-world-runtime Containerised 
-Simple Hello World App written in golang
+  Simple Hello World App written in golang Listens on a port from `LISTEN_PORT` env var and Responds with "Hello, World!"
 
 # Services used
-  * Docker for containerisation.
+  * Docker for containerisation. App runs in a container with restart policy
   * EC2 instances for hosting proxy server and backend application.
-  * Nginx as Proxy solution.
-  * OpenSSL Self Signed certificates for TLS Proxy.
+  * Nginx as Proxy solution from VMA to proxy requests to app on VMB
+  * OpenSSL Self Signed certificates for Proxy on HTTPS.
   * Docker named volumes instead of bind mounts used for Proxy config and SSL certs. 
 
     
