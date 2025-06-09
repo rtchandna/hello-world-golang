@@ -8,8 +8,6 @@
   * OpenSSL Self Signed certificates for Proxy on HTTPS.
   * Docker named volumes instead of bind mounts used for Proxy config and SSL certs. 
 
-    
-  
 
 # Steps Followed
 1. Use multi-stage builds to create final image
@@ -18,8 +16,8 @@
 
 2. Create the two t2.micro EC2 instances using Amazon Linux
     * Install the docker using ./docker-install.sh
-    * Allow inbound 8080 and 80 tcp port on VMB
-    * Allow inbound 80 and 443 tcp for TLS on VMA
+    * Allow inbound 8080 port on VMB
+    * Allow inbound 80 (for testing without ssl)and 443 tcp for TLS on VMA
 
 3. Run the Container image from Part 1 on VMB while ensuring the application will be accessible from VMA
     * Test evidences at ./helloworld-server/test-evidence/README.md
