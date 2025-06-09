@@ -9,9 +9,6 @@
 ## Output of curl command from VMA
 ![alt text](curl-command-vma.png)
 
-## Test outside VM in browser
-![alt text](Test-outside-vm.png)
-
 ## Output of container logs 
 docker logs hello-world
 ![alt text](logs.png)
